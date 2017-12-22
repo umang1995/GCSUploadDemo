@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+
+<div class="m-l-lg m-t-lg row">
+<form method="POST" action="{{url_for('test')}}">
+    <div class="col-lg-12">
+    <span class="col-lg-6 m-t-lg m-r-lg m-l-lg">Name</span>
+    <input class="col-lg-6" type="text" name="getName">
+    </div>
+</form>
+
+</div>
+</body>
+</html>
